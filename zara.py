@@ -9,16 +9,18 @@ import argparse
 from time import sleep
 
 # Función para configurar el navegador y aceptar cookies
-def setup_browser(url):
-    driver = webdriver.Firefox()
+def setup_browser(url, arg):
+    if arg.window:
+        driver = webdriver.Firefox()
+    else:
+        driver = webdriver.Firefox(options=webdriver.FirefoxOptions().add_argument("--headless")) #opción para que no se vea el navegador
     wait = WebDriverWait(driver, 150) #ponemos un tiempo de espera de 150 segundos como máximo
-    
-    driver.get(url) #abrimos la url
 
+    driver.get(url) #abrimos la url
     # Hacer click en el botón de aceptar cookies
     element = wait.until(EC.presence_of_element_located((By.ID, "onetrust-accept-btn-handler")))
     element.click()
-
+    
     return driver, wait
 
 # Función para obtener las URLs de los productos
@@ -110,19 +112,16 @@ def process_colors(color_elements):
 
     return available_colors
 
-# Función principal
-import pandas as pd
-# ... (tu código anterior)
-
 def main():
     parser = argparse.ArgumentParser(description="Web scraping de productos Zara")
     parser.add_argument("-v", "--verbose", action="store_true", help="Imprimir información detallada")
     parser.add_argument("-i", "--individual", action="store_true", help="Guardar en archivos CSV individuales")
     parser.add_argument("-c", "--cantidad", type=int, help="Número de productos a raspar")
+    parser.add_argument("-w", "--window", action="store_true", help="Mostrar el navegador")
     args = parser.parse_args()
 
     url = "https://www.zara.com/es/es/mujer-precios-especiales-l1314.html?v1=2291858"
-    driver, wait = setup_browser(url)
+    driver, wait = setup_browser(url, args)
     product_urls = get_product_urls(driver, wait)
 
     all_products = []  # Lista para almacenar todos los productos
@@ -136,10 +135,16 @@ def main():
 
             if scraped_data:
                 for data in scraped_data:
-                    if args.verbose:
-                        print(f"Guardando datos de {product_name} en CSV individual.")
-                    product_df = pd.DataFrame([data])
-                    product_df.to_csv(f"Data/{product_name}_{data['Color']}.csv", index=False)
+                    if args.individual:
+                        if args.verbose:
+                            print(f"Guardando datos de {product_name} en un archivo CSV individual.")
+                        df = pd.DataFrame([data])
+                        df.to_csv(f"Data/{product_name}.csv", index=False)
+                    else:
+                        if args.verbose:
+                            print(f"Añadiendo datos de {product_name} al archivo CSV general.")
+                        df = pd.DataFrame([data])
+                        df.to_csv("Data/productos_zara.csv", mode="a", index=False, header=False)
             else:
                 product_data = {
                     "Producto": product_name,
@@ -149,12 +154,17 @@ def main():
                     "Tallas sin stock": out_of_stock_sizes,
                     "URL": product_url
                 }
-                all_products.append(product_data)
-                if args.verbose:
-                    print(f"Añadiendo datos de {product_name} al archivo CSV general.")
-
+                if (args.individual):
+                    if args.verbose:
+                        print(f"Guardando datos de {product_name} en un archivo CSV individual.")
+                    df = pd.DataFrame([product_data])
+                    df.to_csv(f"Data/{product_name}.csv", index=False)
+                else:
+                    if args.verbose:
+                        print(f"Añadiendo datos de {product_name} al archivo CSV general.")
+                    df = pd.DataFrame([product_data])
+                    df.to_csv("Data/productos_zara.csv", mode="a", index=False, header=False)
     driver.quit()
-
     if not args.individual:
         if args.verbose:
             print("Guardando todos los datos en un solo archivo CSV.")
