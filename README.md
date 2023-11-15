@@ -44,7 +44,8 @@ El programa almacena los datos recopilados en archivos CSV, que pueden ser útil
 
 ## Aviso Legal
 
-Este programa se proporciona solo con fines educativos y de demostración. El scraping de sitios web puede tener implicaciones legales y éticas, y es importante respetar los términos de servicio del sitio web que está raspando. El uso de este programa debe cumplir con todas las leyes y regulaciones aplicables.
+Este programa se proporciona solo con fines educativos y de demostración. El scraping de sitios web puede tener implicaciones legales y éticas, y es importante respetar los términos de servicio del sitio web que está scrapeando
+. El uso de este programa debe cumplir con todas las leyes y regulaciones aplicables.
 
 ## Autor
 
