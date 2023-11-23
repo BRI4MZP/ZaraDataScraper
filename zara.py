@@ -16,6 +16,7 @@ def setup_browser(url, arg):
         driver = webdriver.Firefox(options=webdriver.FirefoxOptions().add_argument("--headless")) #opción para que no se vea el navegador
     wait = WebDriverWait(driver, 150) #ponemos un tiempo de espera de 150 segundos como máximo
 
+
     driver.get(url) #abrimos la url
     # Hacer click en el botón de aceptar cookies
     element = wait.until(EC.presence_of_element_located((By.ID, "onetrust-accept-btn-handler")))
