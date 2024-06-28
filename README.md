@@ -29,7 +29,7 @@ El programa ofrece varias opciones de línea de comandos:
 `python zara.py -c=10`
 
 ## Funcionamiento del Programa
-
+![Product Visualizer](view.gif)
 El programa sigue los siguientes pasos:
 
 - Abre una instancia del navegador Firefox y navega a la URL proporcionada.
