@@ -1,0 +1,7 @@
+,Producto: ,Color,Precio,Descuento,Tallas disponibles,Tallas con poco stock,Tallas sin stock,URL
+0,SUDADERA CAPUCHA,Gris antracita,"15,99 EUR",-42%,[],['L'],"['S', 'M', 'XL', 'XXL']",https://www.zara.com/es/es/sudadera-capucha-p00761350.html
+1,SUDADERA CAPUCHA,Negro,"15,99 EUR",-42%,['S'],[],"['M', 'L', 'XL', 'XXL']",https://www.zara.com/es/es/sudadera-capucha-p00761350.html
+2,SUDADERA CAPUCHA,Blanco roto,"15,99 EUR",-42%,"['S', 'M']","['L', 'XL']",['XXL'],https://www.zara.com/es/es/sudadera-capucha-p00761350.html
+3,SUDADERA CAPUCHA,Azul tinta,"15,99 EUR",-42%,"['S', 'M', 'L', 'XL', 'XXL']",[],[],https://www.zara.com/es/es/sudadera-capucha-p00761350.html
+4,SUDADERA CAPUCHA,Rojo,"15,99 EUR",-42%,"['S', 'M', 'L']",['XL'],['XXL'],https://www.zara.com/es/es/sudadera-capucha-p00761350.html
+5,SUDADERA CAPUCHA,Verde,"15,99 EUR",-42%,"['S', 'M', 'L', 'XL']",[],['XXL'],https://www.zara.com/es/es/sudadera-capucha-p00761350.html

@@ -1,0 +1,18 @@
+Producto: ,Color,Precio,Descuento,Tallas disponibles,Tallas con poco stock,Tallas sin stock,URL
+CAMISETA SOMBRERO X PEPO MORENO,Color único,"12,99 EUR",-34%,"['S', 'M', 'L', 'XL']",[],[],https://www.zara.com/es/es/camiseta-sombrero-x-pepo-moreno-p00722428.html
+CAZADORA PLUMÍFERO 100% PLUMA,Negro,"49,99 EUR",-49%,['XL'],[],"['S', 'M', 'L']",https://www.zara.com/es/es/cazadora-plumifero-100-pluma-p04302305.html
+CAZADORA PLUMÍFERO 100% PLUMA,Khaki,"49,99 EUR",-49%,"['S', 'L', 'XL']",['M'],[],https://www.zara.com/es/es/cazadora-plumifero-100-pluma-p04302305.html
+PANTALÓN CARGO RELAXED FIT,Tostado,"25,99 EUR",-27%,"['36', '38', '42']",['44'],"['40', '46']",https://www.zara.com/es/es/pantalon-cargo-relaxed-fit-p00108310.html
+PANTALÓN CARGO RELAXED FIT,Piedra,"25,99 EUR",-27%,"['36', '38', '40']",[],"['42', '44', '46']",https://www.zara.com/es/es/pantalon-cargo-relaxed-fit-p00108310.html
+PANTALÓN CARGO RELAXED FIT,Verde,"25,99 EUR",-27%,"['36', '38', '40', '42', '44']",[],['46'],https://www.zara.com/es/es/pantalon-cargo-relaxed-fit-p00108310.html
+PANTALÓN CARGO RELAXED FIT,Negro,"25,99 EUR",-27%,['36'],[],"['38', '40', '42', '44', '46']",https://www.zara.com/es/es/pantalon-cargo-relaxed-fit-p00108310.html
+CAZADORA ACOLCHADA CAPUCHA,Color único,"39,99 EUR",-42%,"['S', 'M', 'L', 'XL']",[],[],https://www.zara.com/es/es/cazadora-acolchada-capucha-p00029501.html
+CAMISA RAYAS ALGODÓN - LINO,Crudo / Negro,"22,99 EUR",-23%,"['S', 'M', 'XL']",[],['L'],https://www.zara.com/es/es/camisa-rayas-algodon---lino-p03277401.html
+CAMISA RAYAS ALGODÓN - LINO,Negro / Blanco,"22,99 EUR",-23%,"['S', 'M', 'L', 'XL']",[],[],https://www.zara.com/es/es/camisa-rayas-algodon---lino-p03277401.html
+PARKA ACOLCHADA CUELLO DESMONTABLE,Azul,"49,99 EUR",-49%,"['S', 'M', 'L', 'XL']",[],[],https://www.zara.com/es/es/parka-acolchada-cuello-desmontable-p06518518.html
+PARKA ACOLCHADA CUELLO DESMONTABLE,Verde claro,"49,99 EUR",-49%,"['S', 'M', 'L', 'XL']",[],[],https://www.zara.com/es/es/parka-acolchada-cuello-desmontable-p06518518.html
+CAMISA DENIM,Hielo,"15,99 EUR",-38%,"['S', 'M', 'XL']",['L'],['XXL'],https://www.zara.com/es/es/camisa-denim-p06987440.html
+CAMISA DENIM,Khaki,"15,99 EUR",-38%,"['S', 'M']",[],"['L', 'XL', 'XXL']",https://www.zara.com/es/es/camisa-denim-p06987440.html
+CAMISA DENIM,Negro,"15,99 EUR",-38%,"['S', 'M', 'L', 'XL', 'XXL']",[],[],https://www.zara.com/es/es/camisa-denim-p06987440.html
+CAMISA DENIM,Verde claro,"15,99 EUR",-38%,"['S', 'M', 'L', 'XL']",[],['XXL'],https://www.zara.com/es/es/camisa-denim-p06987440.html
+CAMISA DENIM,Azul claro,"15,99 EUR",-38%,[],"['S', 'M', 'L', 'XL']",['XXL'],https://www.zara.com/es/es/camisa-denim-p06987440.html

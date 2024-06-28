@@ -1,0 +1,4 @@
+,Producto: ,Color,Precio,Descuento,Tallas disponibles,Tallas con poco stock,Tallas sin stock,URL
+0,SANDALIA TÉCNICA,Multicolor,"17,99 EUR",-21%,"['43', '44']",[],"['39', '40', '41', '42', '45', '46', '47']",https://www.zara.com/es/es/sandalia-tecnica-p12705220.html
+1,SANDALIA TÉCNICA,Multicolor,"17,99 EUR",-21%,"['41', '44']","['40', '42', '43', '45']","['39', '46', '47']",https://www.zara.com/es/es/sandalia-tecnica-p12705220.html
+2,SANDALIA TÉCNICA,Negro,"17,99 EUR",-21%,['43'],"['40', '41', '42', '44']","['39', '45', '46', '47']",https://www.zara.com/es/es/sandalia-tecnica-p12705220.html
